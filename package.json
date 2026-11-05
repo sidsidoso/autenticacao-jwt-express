@@ -1,0 +1,31 @@
+{
+  "name": "autenticacao-jwt-express",
+  "version": "1.0.0",
+  "description": "Autenticação com Express 5: senhas com scrypt + salt, JWT de acesso curto e refresh token com rotação e revogação em SQLite.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "promover-admin": "node src/scripts/promover-admin.js"
+  },
+  "keywords": [
+    "express",
+    "jwt",
+    "refresh-token",
+    "scrypt",
+    "sqlite",
+    "autenticacao"
+  ],
+  "author": "sidsidoso",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.11.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3"
+  }
+}
